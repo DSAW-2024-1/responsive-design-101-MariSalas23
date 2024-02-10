@@ -5,6 +5,9 @@
 ![Preview del diseño](./design/desktop-preview.jpg)
 
 
+## Link de la página: 
+.
+
 Bienvenido al taller de desarrollo web donde aprenderemos a crear y estilizar una página sencilla de recetas. Este taller se divide en dos partes:
 
 ## Responsive Design

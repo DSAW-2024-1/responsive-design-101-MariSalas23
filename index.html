@@ -1,77 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!-- Para CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <!-- Para las fuentes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Título descriptivo de la página -->
+    <title>Frontend Mentor | Recipe page</title>
 
-  Simple Omelette Recipe
+    <!-- Diseño de para la autoría -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- "main contiene a los elementos visibles en la página web" -->
+    <main class="main">
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      <!-- Imagen -->
+      <div class="image-container">
+        <!-- Uso de ruta relativa y alt para accesibilidad -->
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette" />
+      </div>
 
-  Preparation time
+      <!-- Container con margen -->
+      <div class="container-border">
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
+        <!-- La clase sección es para aplicar los interlineados con flex (gap) -->
+        <!-- La página se divide en 5 secciones -->
+        <div class="section first-section">
+          <h1>Simple Omelette Recipe</h1>
 
-  Ingredients
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with your
+            choice of cheese, vegetables, or meats.
+          </p>
+        </div>
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+        <div class="section second-section">
+          <h3>Preparation time</h3>
 
-  Instructions
+          <!-- Uso de lista no numerada con etiqueta ul -->
+          <ul>
+           
+            <!-- El uso de la etiqueta span es para poner en negrilla las letras y dejar margen -->
+            <li>
+              <div>
+                <span>Total:</span> Approximately 10 minutes
+              </div>
+            </li>
+ 
+            <li>
+              <div>
+                <span>Preparation:</span> 5 minutes
+              </div>
+            </li>
+              
+            <li>
+              <div>
+                <span>Cooking:</span> 5 minutes
+              </div>
+            </li>  
+          </ul>
+        </div>
 
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
+        <div class="section third-section">
+          <h2>Ingredients</h2>
 
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+          <ul>
+            <!-- Este span no va en negrilla -->
+            <li><span>2-3 large eggs</span></li>
+            <li><span>Salt, to taste</span></li>
+            <li><span>Pepper, to taste</span></li>
+            <li><span>1 tablespoon of butter or oil</span></li>
+            <li>
+              <div>
+                  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </div>
+            </li>
+          </ul>
+        </div>
 
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
+        <!-- Línea separadadora -->
+        <div class = "lines"></div>
 
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
+        <div class="section fourth-section">
+          <h2>Instructions</h2>
 
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
+          <!-- Uso de lista numerada con etiqueta ol -->
+          <ol>
+            <li>
+              <!-- En esta sección se usan varios div para el margen -->
+              <!-- Uso de span para negrilla -->
+              <div>
+                <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
+                salt and pepper until they are well mixed. You can add a tablespoon
+                of water or milk for a fluffier texture.
+              </div>
+            </li>
+            
+            <li>
+              <div>
+                <span>Heat the pan:</span> Place a non-stick frying pan over medium
+                heat and add butter or oil.
+            </div>
+            </li>
+            
+            <li>
+              <div>
+                <span>Cook the omelette:</span> Once the butter is melted and
+                bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+                coat the surface.
+              </div>
+            </li>
+            
+            <li>
+              <div>
+                <span>Add fillings (optional):</span> When the eggs begin to set at
+                the edges but are still slightly runny in the middle, sprinkle your
+                chosen fillings over one half of the omelette.
+              </div>
+            </li>
+            
+            <li>
+              <div>
+                <span>Fold and serve:</span> As the omelette continues to cook,
+                carefully lift one edge and fold it over the fillings. Let it cook
+                for another minute, then slide it onto a plate.
+              </div>
+            </li>
+            
+            <li>
+              <div>
+                <span>Enjoy:</span> Serve hot, with additional salt and pepper if
+                needed.
+            </div>
+            </li>
+          </ol>
+        </div>
+        
+        <!-- Línea separadadora -->
+        <div class = "lines"></div>
 
-  Enjoy: Serve hot, with additional salt and pepper if needed.
+        <div class="section fifth-section">
+          <h2>Nutrition</h2>
 
-  Nutrition
+          <p>
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
 
-  The table below shows nutritional values per serving without the additional fillings.
+          <!-- Uso de tabla -->
+          <!-- Span para cambio de color y poner en negrilla -->
+          <table>
+            <tr>
+              <th>Calories</th>
+              <td><span>277kcal</span></td>
+            </tr>
 
-  Calories
-  277kcal
+            <tr>
+              <th>Carbs</th>
+              <td><span>0g</span></td>
+            </tr>
 
-  Carbs
-  0g
+            <tr>
+              <th>Protein</th>
+              <td><span>20g</span></td>
+            </tr>
 
-  Protein
-  20g
+            <tr>
+              <th>Fat</th>
+              <td><span>22g</span></td>
+            </tr>
+          </table>
+        </div>
 
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Atribución de autoría -->
+        <div class="attribution">
+          Challenge by
+          <!-- Uso de etiqueta a para links -->
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Mariana Salas</a>.
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

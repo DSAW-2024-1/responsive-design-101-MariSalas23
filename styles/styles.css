@@ -1,0 +1,380 @@
+/* MOBILE FIRST*/
+
+/* Estilos más generales */
+* {
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    /* Para que diseño abarque toda la pantalla del dispositivo */
+    width: 100vw;
+    height: 100vh;
+
+    /* Para centrar el contenido */
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    
+    /* Uso de porcentajes para accesibilidad/responsive */
+    width: 100%;
+    height: 100%;
+}
+
+.container-border {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+
+    /* Uso unidades relativas como porcentajes y rem para accesibilidad */
+    gap: 1.8rem;
+    padding: 1.5rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Etiquetas de tipo de texto */
+
+h1 {
+    color:hsl(24, 5%, 18%);
+    font-family: 'Young Serif';
+    font-size: 2rem;
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-family: 'Young Serif';
+    font-size: 1.5rem;
+}
+
+h3 {
+    color:hsl(332, 51%, 32%);
+    font-family: 'Outfit';
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p,li,table {
+    font-size: 0.87rem;
+}
+
+/* Secciones */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Uso de anidamiento */
+.second-section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+
+    /* Pseudo-clase para estilizar el marcador de una lista */
+    li::marker {
+        color:hsl(332, 51%, 32%);
+    }
+}
+
+.third-section {
+    span {
+        font-weight: 400;
+    }  
+
+    div {
+        margin-left: 0.8rem;
+    }
+
+    li::marker {
+        color:hsl(14, 45%, 36%);
+    }  
+}
+
+.fourth-section {
+    span {
+        margin-left: 0;
+    }
+
+    div {
+        margin-left: 1.3rem;
+    }
+
+    li::marker {
+        color:hsl(14, 45%, 36%);
+        font-weight: 700;
+    }    
+}
+
+.fifth-section {
+    span {
+        color:hsl(14, 45%, 36%);
+        font-weight: 700;
+    } 
+
+    table th, table td{
+        border-bottom: 0.1rem solid hsl(0, 0%, 90%);
+        padding-left: 2rem;
+        line-height: 2.2rem;
+        text-align: left;
+    }
+
+    /* Uso de pseudo-clase para esconder la última línea de la tabla */
+    table tr:last-child th, table tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+/* Espacios de las listas */
+ul,ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    margin-left: 1.2rem;
+}
+
+/* Uso de span para negrilla y espacio */
+span {
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+/* Líneas separadoras */
+.lines {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border-top: 0.1rem solid hsl(0, 0%, 90%);
+}
+
+/* 768px 1024px */
+@media (min-width: 768px) and (max-width: 1024px), (min-height: 768px)
+{
+
+    /* Margen general */
+    .container-border {
+        gap: 3.5rem;
+        padding: 3.5rem;
+    }
+    
+    /* Etiquetas de tipo de texto */
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    p,li,table {
+        font-size: 1.87rem;
+    }
+    
+    /* Secciones */
+    
+    .section {
+        gap: 2.1rem;
+    }
+    
+    .first-section {
+        gap: 2.5rem;
+    }
+    
+    .second-section {
+        padding: 2.3rem;
+        border-radius: 1.8rem;
+    }
+    
+    .third-section {
+        div {
+            margin-left: 1.8rem;
+        }
+    }
+    
+    .fourth-section {
+        div {
+            margin-left: 2.3rem;
+        }
+    }
+    
+    .fifth-section {
+        table th, table td{
+            border-bottom: 0.2rem solid hsl(0, 0%, 90%);
+            padding-left: 3rem;
+            line-height: 3.6rem;
+        }
+    
+        table tr:last-child th, table tr:last-child td {
+            border-bottom: none;
+        }
+    }
+    
+    /* Espacios de las listas */
+    ul,ol {
+        gap: 1.8rem;
+    
+        margin-left: 2.2rem;
+    }
+    
+    /* Uso de span espacio */
+    span {
+        margin-left: 1.8rem;
+    }
+    
+    /* Líneas separadoras */
+    .lines {
+        border-top: 0.2rem solid hsl(0, 0%, 90%);
+    }
+}
+
+/* +1024px */
+@media (min-width: 1025px), (min-height: 1025px)
+{   
+    /*fondo*/
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+    
+    .image-container img {
+        border-radius: 1.3rem;
+    }
+
+    /*Restablecer margen*/
+    .container-border {
+        padding: 0;
+        gap: 3.5rem;
+    }
+    
+    .main {
+        width: 50%;
+        height: 100%;
+        padding: 4.8rem;
+        border-radius: 3.5rem;
+
+        display: flex;
+        flex-direction: column;
+        -ms-flex-align: center;
+        gap: 3.8rem;
+    }
+
+    /* Etiquetas de tipo de texto */
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.3rem;
+    }
+    
+    h3 {
+        font-size: 2.8rem;
+    }
+    
+    p,li,table {
+        font-size: 1.6rem;
+    }
+    
+    /* Secciones */
+
+    .section {
+        gap: 3rem;
+    }
+
+    .second-section {
+        padding: 3.2rem;
+        border-radius: 2.8rem;
+
+        span {
+            margin: 0;
+        }
+        
+        div {
+            margin-left: 2.5rem;
+        }
+    }
+
+    .third-section {
+        div {
+            margin-left: 2.5rem;
+        }
+    }
+    
+    .fourth-section {
+        div {
+            margin-left: 2.3rem;
+        } 
+    }
+    
+    .fifth-section {
+        table th, table td{
+            border-bottom: 0.2rem solid hsl(0, 0%, 90%);
+            padding-left: 4rem;
+            line-height: 4.6rem;
+        }
+    
+        table tr:last-child th, table tr:last-child td {
+            border-bottom: none;
+        }
+    }
+    
+    /* Espacio de las listas */
+    ul,ol {
+        gap: 2.2rem;
+        margin-left: 3.2rem;
+    }
+    
+    /* Uso de span para espacio */
+    span {
+        margin-left: 2.3rem;
+    }
+    
+    /* Líneas separadoras */
+    .lines {
+        border-top: 0.2rem solid hsl(0, 0%, 90%);
+    }
+}
+
+/* CREATIVIDAD */
+
+/* Estilos con pseudo-clase hover para h1, h2 y h3.
+   Al hacer click sobre los títulos y subtítulos, cambían de color.
+   No hay colores neones pensando en accesibilidad */
+   
+h1:hover {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+}
+
+h2:hover {
+    background-color:hsl(30, 54%, 90%)
+}
+
+h3:hover {
+    background-color: hsl(332, 51%, 32%);
+    color: hsl(330, 100%, 98%);
+}
