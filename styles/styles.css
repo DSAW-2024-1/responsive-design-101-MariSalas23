@@ -305,6 +305,10 @@ span {
         gap: 3rem;
     }
 
+    .first-section {
+        gap: 3rem;
+    }
+
     .second-section {
         padding: 3.2rem;
         border-radius: 2.8rem;
