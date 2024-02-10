@@ -6,7 +6,18 @@
 
 
 ## Link de la página: 
-.
+(https://dsaw-2024-1.github.io/responsive-design-101-MariSalas23/)
+
+## Imágenes
+
+**320 x 480**
+![Diseño mobile](./design/mobile.jpg)
+
+**768 x 1024**
+![Diseño tablet](./design/tablet.jpg)
+
+**+1024**
+![Diseño desktop](./design/desktop.jpg)
 
 Bienvenido al taller de desarrollo web donde aprenderemos a crear y estilizar una página sencilla de recetas. Este taller se divide en dos partes:
 

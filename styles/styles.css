@@ -363,7 +363,7 @@ span {
 
 /* Estilos con pseudo-clase hover para h1, h2 y h3.
    Al hacer click sobre los títulos y subtítulos, cambían de color.
-   No hay colores neones pensando en accesibilidad */
+   No hay colores neones pensando en la accesibilidad */
    
 h1:hover {
     background-color: hsl(330, 100%, 98%);
